@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Nail Bar — Mount Vernon, NY · By Appointment</title>
+  <meta name="description" content="The Nail Bar — a chic little nail bar in Mount Vernon, NY. Pull up a seat, enjoy the vibe, and leave with nails you love. Meticulous artistry, one client at a time." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Nail Bar — Mount Vernon, NY" />
+  <meta property="og:description" content="A chic little nail bar in Mount Vernon, NY. Pull up a seat, get gorgeous." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300..800&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://storecal.onrender.com" crossorigin />
+  <link rel="dns-prefetch" href="https://storecal.onrender.com" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Grain / texture overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo">
+        <span class="nav__logo-mark">✦</span>
+        The Nail Bar
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <a href="#book" class="btn btn--nav" data-storecal-book>Book Now</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <main id="top">
+    <section class="hero" id="hero">
+      <div class="blob blob--1" aria-hidden="true"></div>
+      <div class="blob blob--2" aria-hidden="true"></div>
+      <div class="blob blob--3" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="hero__eyebrow" data-reveal>
+            <span class="pill">✦ Mount Vernon, NY</span>
+          </p>
+          <h1 class="hero__title" data-reveal>
+            Pull up a seat,<br />
+            get <em>gorgeous.</em>
+          </h1>
+          <p class="hero__sub" data-reveal>
+            A chic little nail bar — comfy seats, good music, and a nail tech who
+            actually listens. You leave looking <em>ridiculously&nbsp;good.</em>
+          </p>
+          <div class="hero__cta" data-reveal>
+            <a href="#book" class="btn btn--primary" data-storecal-book>Book your seat</a>
+            <a href="#services" class="btn btn--ghost">See the menu →</a>
+          </div>
+
+          <div class="hero__proof" data-reveal>
+            <span>★★★★★</span>
+            <span>Loved by 13k+ on Instagram</span>
+          </div>
+        </div>
+
+        <div class="hero__visual" data-reveal>
+          <div class="hero__frame">
+            <img src="images/hero.png" alt="Silver chrome stiletto nails by The Nail Bar"
+                 class="hero__img" id="heroImg" onerror="this.classList.add('is-missing')" />
+            <div class="hero__frame-fallback">
+              <span>💅</span>
+              <p>Drop a photo at<br /><code>images/hero.png</code></p>
+            </div>
+          </div>
+          <div class="hero__badge">★★★★★<span>5.0 · Mount Vernon</span></div>
+          <span class="floatie floatie--hero1">💅</span>
+          <span class="floatie floatie--hero2">🍸</span>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Gel &amp; BIAB ✦ Nail Art ✦ Structured Manis ✦ Pedicures ✦ Chrome &amp; Cat-Eye ✦ Pull Up A Seat ✦ Good Music ✦</span>
+        <span>Gel &amp; BIAB ✦ Nail Art ✦ Structured Manis ✦ Pedicures ✦ Chrome &amp; Cat-Eye ✦ Pull Up A Seat ✦ Good Music ✦</span>
+      </div>
+    </div>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services section" id="services">
+      <span class="floatie floatie--svc1">💅</span>
+      <span class="floatie floatie--svc2">🍸</span>
+      <div class="section__head">
+        <p class="section__eyebrow" data-reveal>The Menu</p>
+        <h2 class="section__title" data-reveal>Pick your <em>flavor.</em></h2>
+        <p class="section__lede" data-reveal>
+          Every set is done meticulously, one client at a time. Tap any service to
+          book it in seconds.
+        </p>
+      </div>
+
+      <!-- Live menu from StoreCal (script.js): skeletons show until the fetch
+           resolves, then real cards render (a small fallback set on failure). -->
+      <div class="services__grid" id="servicesGrid" aria-busy="true">
+        <div class="sk sk-card"></div>
+        <div class="sk sk-card"></div>
+        <div class="sk sk-card"></div>
+      </div>
+
+      <p class="services__note" data-reveal>
+        ✦ Custom nail art priced per design. Ask us anything at booking.
+      </p>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="experience section" id="experience">
+      <div class="experience__grid">
+        <div class="experience__copy" data-reveal>
+          <p class="section__eyebrow">The Experience</p>
+          <h2 class="section__title">Less salon,<br /><em>more lounge.</em></h2>
+          <p class="experience__text">
+            We kept it intimate on purpose. Bar-style seating, zero rush, all the
+            good stuff — your favorite playlist and a nail tech who actually
+            listens to what you want.
+          </p>
+          <ul class="experience__list">
+            <li><span>🍸</span> Bar-style seating, all the vibes</li>
+            <li><span>🎶</span> Music &amp; a screen if you want it</li>
+            <li><span>✨</span> Premium products, gentle prep</li>
+            <li><span>💌</span> Booked one-on-one, never double-stacked</li>
+          </ul>
+          <a href="#book" class="btn btn--primary" data-storecal-book>Come hang out</a>
+        </div>
+
+        <div class="experience__visual" data-reveal>
+          <div class="polaroid polaroid--1">💅</div>
+          <div class="polaroid polaroid--2">🍸</div>
+          <div class="polaroid polaroid--3">✦</div>
+          <div class="experience__ring"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY (preview → full page) ===== -->
+    <section class="gallery section" id="gallery">
+      <span class="floatie floatie--gal1">🍸</span>
+      <span class="floatie floatie--gal2">💅</span>
+      <div class="section__head">
+        <p class="section__eyebrow" data-reveal>The Work</p>
+        <h2 class="section__title" data-reveal>Fresh off the <em>chair.</em></h2>
+        <p class="section__lede" data-reveal>
+          A peek at recent sets — swing by the full gallery for more.
+        </p>
+      </div>
+
+      <!-- 4 most recent StoreCal store images (script.js); skeletons until loaded. -->
+      <div class="gallery__grid" id="galleryHome" aria-busy="true">
+        <div class="sk sk-tile"></div>
+        <div class="sk sk-tile"></div>
+        <div class="sk sk-tile"></div>
+        <div class="sk sk-tile"></div>
+      </div>
+
+      <a href="gallery.html" class="btn btn--ghost gallery__cta" data-reveal>
+        See the full gallery →
+      </a>
+    </section>
+
+    <!-- ===== REVIEWS (preview → full page) ===== -->
+    <section class="reviews section" id="reviews">
+      <span class="floatie floatie--rev1">💅</span>
+      <span class="floatie floatie--rev2">🍸</span>
+      <div class="section__head">
+        <p class="section__eyebrow" data-reveal>Kind words</p>
+        <h2 class="section__title" data-reveal>They keep <em>coming back.</em></h2>
+        <div class="reviews__rating" data-reveal>
+          <span class="reviews__stars">★★★★★</span>
+          <span>Loved on Instagram &amp; Google</span>
+        </div>
+      </div>
+
+      <div class="reviews__grid">
+        <blockquote class="review" data-reveal>
+          <div class="review__stars">★★★★★</div>
+          <p>"Honestly the most relaxing nail appointment of my life. Great music, great convo, and my nails lasted almost a month."</p>
+          <cite>— Jasmine R.</cite>
+        </blockquote>
+        <blockquote class="review" data-reveal>
+          <div class="review__stars">★★★★★</div>
+          <p>"The art is unreal. I showed a blurry Pinterest pic and somehow got exactly what I wanted. Booked my next 3 already."</p>
+          <cite>— Dani M.</cite>
+        </blockquote>
+        <blockquote class="review" data-reveal>
+          <div class="review__stars">★★★★★</div>
+          <p>"Feels like hanging out with a friend who happens to be insanely talented. My little monthly ritual now."</p>
+          <cite>— Kayla T.</cite>
+        </blockquote>
+      </div>
+
+      <div class="reviews__cta" data-reveal>
+        <a href="reviews.html" class="btn btn--ghost">Read all reviews →</a>
+      </div>
+    </section>
+
+    <!-- ===== BOOKING CTA BAND ===== -->
+    <section class="book section" id="book">
+      <div class="blob blob--book" aria-hidden="true"></div>
+      <span class="floatie floatie--book1">💅</span>
+      <span class="floatie floatie--book2">🍸</span>
+      <div class="book__inner">
+        <p class="section__eyebrow" data-reveal>Book now</p>
+        <h2 class="section__title" data-reveal>Grab your <em>seat.</em></h2>
+        <p class="section__lede" data-reveal>
+          Tap below to pick a time — you're set in a couple taps. New here? Reach
+          out and we'll match you to the perfect service.
+        </p>
+
+        <div class="book__cta" data-reveal>
+          <button type="button" class="btn btn--primary btn--lg" data-storecal-book>✦ Book your appointment</button>
+          <a href="https://www.instagram.com/itsthenailbar/" target="_blank" rel="noopener" class="btn btn--ghost">DM on Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="visit">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="#top" class="nav__logo nav__logo--footer">
+          <span class="nav__logo-mark">✦</span> The Nail Bar
+        </a>
+        <p>Pull up a seat, get gorgeous.<br />Mount Vernon's cozy little nail bar.</p>
+        <a href="https://www.instagram.com/itsthenailbar/" target="_blank" rel="noopener" class="footer__ig">@itsthenailbar</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Visit</h4>
+        <p>49 W. Grand St<br />Mount Vernon, NY</p>
+        <a href="https://maps.google.com/?q=49+W+Grand+St+Mount+Vernon+NY" target="_blank" rel="noopener">Get directions →</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Hours</h4>
+        <p>By appointment only</p>
+        <p>Tue – Sat · 10a – 7p</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Say hi</h4>
+        <a href="tel:+13479315183">347-931-5183</a>
+        <a href="#book" data-storecal-book>Book an appointment</a>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <span>© <span id="year"></span> The Nail Bar · Mount Vernon, NY</span>
+      <span>Made with ✦ &amp; a little glam</span>
+    </div>
+  </footer>
+
+  <!-- ===== StoreCal booking widget =====
+       Loads StoreCalWidget (global) + the booking modal. In production, swap the
+       localhost origin for your deployed domain that serves embed.js — the API
+       base is inferred from this script's own src, so nothing else changes.
+       Every booking CTA carries data-storecal-book, so the embed binds the
+       clicks itself (see script.js for the small step-two nudge). -->
+  <script src="https://storecal.onrender.com/storecal-data.js" data-store="sc_a1588f0b7afba3e678"></script>
+  <script src="https://storecal.onrender.com/embed.js" data-store="sc_a1588f0b7afba3e678" data-accent="#ff4f8b"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
